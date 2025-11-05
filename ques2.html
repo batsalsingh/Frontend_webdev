@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Height and Width Practice Layout</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f1f2f6;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .box {
+      color: white;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      border-radius: 10px;
+      overflow: auto;
+    }
+
+    /* Box 1 - using px and % */
+    .box1 {
+      width: 200px;
+      height: 150px;
+      background-color: #3498db;
+      min-height: 100px;
+      max-width: 250px;
+    }
+
+    /* Box 2 - using vh and vw */
+    .box2 {
+      width: 20vw;
+      height: 30vh;
+      background-color: #e67e22;
+      min-height: 100px;
+      max-width: 400px;
+    }
+
+    /* Box 3 - using em and demonstrating overflow */
+    .box3 {
+      width: 25em;
+      height: 10em;
+      background-color: #27ae60;
+      min-height: 6em;
+      max-width: 30em;
+      overflow: scroll;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="box box1">Box 1 (px & %)</div>
+    <div class="box box2">Box 2 (vh & vw)</div>
+    <div class="box box3">
+      Box 3 (em) <br>
+      This box demonstrates overflow behavior. Add more text to see the scroll in action! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a erat nec urna.
+    </div>
+  </div>
+
+</body>
+</html>

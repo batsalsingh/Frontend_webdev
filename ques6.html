@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Transformations Showcase</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f5f6fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      gap: 30px;
+      text-align: center;
+    }
+
+    .box {
+      width: 120px;
+      height: 120px;
+      background: #3498db;
+      border-radius: 10px;
+      transition: all 0.4s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    .box1:hover {
+      transform: rotate(45deg);
+      background: #9b59b6;
+    }
+
+    .box2:hover {
+      transform: scale(1.3);
+      background: #e67e22;
+    }
+
+    .box3:hover {
+      transform: translate(30px, -20px);
+      background: #27ae60;
+    }
+
+    .box4:hover {
+      transform: skew(15deg, 10deg);
+      background: #e74c3c;
+    }
+
+    .label {
+      margin-top: 10px;
+      font-size: 0.95rem;
+      color: #333;
+    }
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="item">
+      <div class="box box1">Rotate</div>
+      <div class="label">rotate(45deg)</div>
+    </div>
+    <div class="item">
+      <div class="box box2">Scale</div>
+      <div class="label">scale(1.3)</div>
+    </div>
+    <div class="item">
+      <div class="box box3">Translate</div>
+      <div class="label">translate(30px, -20px)</div>
+    </div>
+    <div class="item">
+      <div class="box box4">Skew</div>
+      <div class="label">skew(15deg, 10deg)</div>
+    </div>
+  </div>
+
+</body>
+</html>

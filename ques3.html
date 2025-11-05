@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gradient Background Webpage</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
+      text-align: center;
+    }
+
+    header, footer {
+      position: fixed;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      padding: 15px 0;
+      z-index: 10;
+    }
+
+    header {
+      top: 0;
+    }
+
+    footer {
+      bottom: 0;
+    }
+
+    main {
+      margin-top: 70px;
+      margin-bottom: 60px;
+    }
+
+    section {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      font-weight: bold;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    /* Linear Gradient Section */
+    .linear {
+      background: linear-gradient(135deg, #3498db, #8e44ad);
+    }
+
+    /* Radial Gradient Section */
+    .radial {
+      background: radial-gradient(circle, #f39c12, #d35400, #8e44ad);
+      background-attachment: fixed; /* parallax-like effect */
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 700px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🎨 Gradient Background Demonstration</h1>
+  </header>
+
+  <main>
+    <section class="linear">
+      <h1>Linear Gradient Section</h1>
+      <p>This section uses a <strong>linear gradient</strong> background that transitions smoothly from blue to purple.</p>
+    </section>
+
+    <section class="radial">
+      <h1>Radial Gradient Section</h1>
+      <p>This section features a <strong>radial gradient</strong> with a parallax-like effect using <code>background-attachment: fixed;</code>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Gradient Demo Page | Designed by Satvik</p>
+  </footer>
+
+</body>
+</html>
