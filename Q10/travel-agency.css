@@ -1,0 +1,97 @@
+body {
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  color: #2c3e50;
+}
+
+.hero-header {
+  background: linear-gradient(135deg, #1a365d 0%, #2d3748 50%, #1a202c 100%);
+  color: white;
+  padding: 4rem 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-header h1 {
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.carousel-item {
+  height: 85vh;
+  position: relative;
+}
+
+.carousel-img {
+  object-fit: cover;
+  height: 100%;
+  filter: brightness(70%);
+}
+
+.carousel-caption {
+  bottom: 20%;
+  left: 10%;
+  right: 10%;
+  text-align: left;
+  background: rgba(0,0,0,0.4);
+  padding: 2rem;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+.destination-badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.25);
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  margin-bottom: 1rem;
+}
+
+.progress-section {
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  padding: 5rem 0;
+}
+
+.progress-card {
+  background: white;
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+
+.destinations-explained {
+  background: #f9fafb;
+}
+
+.card-img-top {
+  height: 240px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+footer {
+  background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+  color: #e2e8f0;
+  padding: 4rem 0 2rem;
+}
+
+footer h5 {
+  color: white;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+footer a {
+  color: #90cdf4;
+  text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    }

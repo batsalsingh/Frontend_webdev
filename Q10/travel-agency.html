@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wanderlust Travel Agency</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="travel-agency.css"/>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="hero-header">
+    <div class="container hero-content">
+      <h1 class="display-3 mb-3">WANDERLUST TRAVEL</h1>
+      <p class="lead">Curated Luxury Experiences Around the Globe</p>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+
+    <!-- CAROUSEL -->
+    <div id="destinationCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#destinationCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#destinationCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#destinationCarousel" data-bs-slide-to="2"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" class="d-block w-100 carousel-img" alt="Maldives">
+          <div class="carousel-caption">
+            <div class="destination-badge">LUXURY RESORT</div>
+            <h2>Maldives Overwater Villas</h2>
+            <p>Experience unparalleled luxury in private overwater bungalows surrounded by turquoise lagoons and coral reefs.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1508264165352-258859e62245" class="d-block w-100 carousel-img" alt="Swiss Alps">
+          <div class="carousel-caption">
+            <div class="destination-badge">ADVENTURE EXPEDITION</div>
+            <h2>Swiss Alps Luxury Lodge</h2>
+            <p>Discover breathtaking alpine vistas from exclusive mountain lodges and enjoy guided glacier tours with helicopter views.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4" class="d-block w-100 carousel-img" alt="Tuscany">
+          <div class="carousel-caption">
+            <div class="destination-badge">CULTURAL IMMERSION</div>
+            <h2>Tuscany Wine Estate</h2>
+            <p>Stay in a restored 16th-century villa surrounded by vineyards. Indulge in private tastings and Italian cooking classes.</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#destinationCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#destinationCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <!-- PROGRESS SECTION -->
+    <section class="progress-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="progress-card text-center">
+              <h3 class="mb-4">Your Luxury Experience Awaits</h3>
+              <p class="mb-4">Complete your reservation to secure your exclusive travel experience</p>
+              <div class="progress mb-4">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 70%">
+                  70% Complete
+                </div>
+              </div>
+              <div class="row text-center mb-4">
+                <div class="col-md-4">✓ Destination Selected</div>
+                <div class="col-md-4">✓ Dates Confirmed</div>
+                <div class="col-md-4">○ Payment Pending</div>
+              </div>
+              <button class="btn btn-luxury text-white">Complete Your Reservation</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESTINATION DETAILS SECTION -->
+    <section class="destinations-explained py-5">
+      <div class="container">
+        <h2 class="text-center mb-5 fw-light">Explore Our Signature Experiences</h2>
+        <div class="row g-4">
+
+          <div class="col-md-4">
+            <div class="card border-0 shadow-lg rounded-4 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1" class="card-img-top" alt="Maldives Luxury">
+              <div class="card-body">
+                <h5 class="card-title">Maldives Paradise</h5>
+                <p class="card-text text-muted">Wake up above the ocean in private villas with crystal-clear water beneath your feet. Dive into coral gardens or relax in world-class spas.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card border-0 shadow-lg rounded-4 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1610878180933-34a3b89b36a9" class="card-img-top" alt="Swiss Alps Lodge">
+              <div class="card-body">
+                <h5 class="card-title">Swiss Alps Adventure</h5
+                <p class="card-text text-muted">Unwind in luxurious mountain lodges. Enjoy skiing, glacier trekking, and private scenic flights over snow-capped peaks.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card border-0 shadow-lg rounded-4 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b" class="card-img-top" alt="Tuscany Vineyards">
+              <div class="card-body">
+                <h5 class="card-title">Tuscany Heritage</h5>
+                <p class="card-text text-muted">Immerse yourself in Italian art, heritage, and wine-making. Stroll through vineyards and savor the finest Chianti wines.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <h5>Contact Our Concierge</h5>
+          <p>Fifth Avenue Luxury Suites<br>New York, NY 10022</p>
+          <p>Email: <a href="mailto:concierge@wanderlustluxury.com">concierge@wanderlustluxury.com</a></p>
+          <p>Hotline: <a href="tel:+18005551234">+1 (800) 555-1234</a></p>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <h5>Luxury Services</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Private Jet Charters</a></li>
+            <li><a href="#">Yacht Expeditions</a></li>
+            <li><a href="#">Cultural Immersions</a></li>
+            <li><a href="#">Wellness Retreats</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4">
+          <h5>Company</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Travel Advisors</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="my-4">
+      <div class="text-center">
+        <p class="mb-0 small opacity-75">© 2024 Wanderlust Luxury Travel. Curating extraordinary journeys since 1995.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

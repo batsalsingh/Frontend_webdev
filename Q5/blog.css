@@ -1,0 +1,71 @@
+:root {
+  --bs-primary: #8e44ad;
+  --bs-font-sans-serif: 'Nunito', sans-serif;
+}
+
+body {
+  font-family: var(--bs-font-sans-serif);
+  background-color: #f8f9fb;
+  color: #1e1e1e;
+}
+
+header {
+  background: linear-gradient(135deg, #8e44ad, #b084f7);
+}
+
+header .btn-light {
+  color: var(--bs-primary);
+  background-color: #fff;
+  transition: 0.3s ease;
+}
+
+header .btn-light:hover {
+  background-color: #f1e6ff;
+  transform: scale(1.05);
+}
+
+.blog-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 1.25rem 1.5rem rgba(0, 0, 0, 0.12);
+}
+
+.card-title {
+  font-size: 1.3rem;
+}
+
+.card-text {
+  font-size: 0.96rem;
+  line-height: 1.6;
+}
+
+.btn-primary {
+  background-color: var(--bs-primary);
+  border: none;
+  transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #732d91;
+}
+
+footer {
+  background: linear-gradient(135deg, #1e1e2f, #3b2c54);
+}
+
+footer .btn-outline-light:hover {
+  color: #1e1e2f;
+  background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  .card-title {
+    font-size: 1.1rem;
+  }
+}

@@ -1,0 +1,81 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f8f9fa;
+  color: #212529;
+  overflow-x: hidden;
+}
+
+header {
+  background: linear-gradient(120deg, #0d0d0d, #212121);
+}
+
+footer {
+  background: linear-gradient(120deg, #0d0d0d, #1c1c1c);
+}
+
+.post-card {
+  border: none;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  background: #fff;
+}
+
+.post-card img {
+  height: 260px;
+  object-fit: cover;
+  transition: all 0.5s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.post-card:hover img {
+  filter: brightness(85%);
+  transform: scale(1.05);
+}
+
+.btn-dark {
+  background-color: #212529;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.btn-dark:hover {
+  background-color: #000;
+  transform: scale(1.05);
+}
+
+.pagination .page-link {
+  color: #212529;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease;
+}
+
+.pagination .page-link:hover {
+  background-color: #212529;
+  color: #fff;
+}
+
+.page-item.active .page-link {
+  background-color: #212529;
+  border-color: #212529;
+}
+
+.btn-outline-dark {
+  border-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-dark:hover {
+  background-color: #212529;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+footer p {
+  margin: 0;
+}

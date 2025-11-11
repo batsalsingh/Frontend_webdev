@@ -1,0 +1,129 @@
+:root {
+  --bs-primary: #8358ff;
+  --bs-font-sans-serif: 'Poppins', sans-serif;
+  --day-bg: #f8f9fc;
+  --day-text: #1f1f1f;
+  --night-bg: #0b0c10;
+  --night-card: #171922;
+  --night-accent: #9a6cff;
+  --night-text: #f2f2f2;
+  --night-muted: #a0a0a0;
+}
+
+body {
+  font-family: var(--bs-font-sans-serif);
+  transition: background 0.4s ease, color 0.4s ease;
+  min-height: 100vh;
+}
+
+/* ✨ New vibrant gradient header/footer */
+header {
+  background: linear-gradient(135deg, #ff0080, #7928ca, #2afadf);
+  color: white;
+  transition: 0.4s ease;
+  background-size: 200% 200%;
+  animation: gradientFlow 6s ease infinite;
+}
+
+footer {
+  background: linear-gradient(135deg, #2afadf, #4c83ff, #ff6ec7);
+  color: white;
+  transition: 0.4s ease;
+  background-size: 200% 200%;
+  animation: gradientFlow 8s ease infinite;
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Day Mode */
+.day-mode {
+  background: var(--day-bg);
+  color: var(--day-text);
+}
+
+.day-mode .card,
+.day-mode .summary {
+  background: #ffffff;
+  color: var(--day-text);
+}
+
+/* Night Mode */
+.night-mode {
+  background: var(--night-bg);
+  color: var(--night-text);
+}
+
+.night-mode header {
+  background: linear-gradient(135deg, #431a69, #6a3ef7, #1c9fff);
+  animation: gradientFlow 7s ease infinite;
+}
+
+.night-mode footer {
+  background: linear-gradient(135deg, #6a3ef7, #1c9fff, #f538a0);
+  animation: gradientFlow 9s ease infinite;
+}
+
+.night-mode .card {
+  background: var(--night-card);
+  color: var(--night-text);
+  border: 1px solid #2a2c34;
+}
+
+.night-mode .summary {
+  background: #20232a;
+  color: var(--night-text);
+  border-color: #2e3038;
+}
+
+.night-mode .text-primary {
+  color: var(--night-accent) !important;
+}
+
+.night-mode .text-muted {
+  color: var(--night-muted) !important;
+}
+
+.btn-light {
+  color: #333;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.btn-light:hover {
+  background-color: #f3e9ff;
+  color: var(--bs-primary);
+}
+
+.btn-outline-light {
+  border-color: #fff;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+.btn-outline-light:hover {
+  background: #fff;
+  color: var(--bs-primary);
+}
+
+.alert {
+  font-size: 0.95rem;
+  border-radius: 0.6rem;
+}
+
+.card {
+  border-radius: 1rem;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+.summary {
+  border-radius: 1rem;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+button#themeToggle {
+  font-size: 0.9rem;
+}
