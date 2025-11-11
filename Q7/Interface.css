@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #f9fafb, #e0f2fe);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.ui-container {
+  text-align: center;
+  width: 100%;
+  max-width: 450px;
+}
+
+.ui-container h1 {
+  color: #0c4a6e;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.card {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #94a3b8;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.search-bar:focus {
+  border-color: #0ea5e9;
+  box-shadow: 0 0 6px rgba(14, 165, 233, 0.5);
+  outline: none;
+}
+
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.btn {
+  flex: 1;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn.primary {
+  background-color: #0ea5e9;
+  color: white;
+}
+
+.btn.primary:hover {
+  background-color: #0284c7;
+}
+
+.btn.primary:active {
+  transform: scale(0.97);
+}
+
+.btn.secondary {
+  background-color: #e2e8f0;
+  color: #1e293b;
+}
+
+.btn.secondary:hover {
+  background-color: #cbd5e1;
+}
+
+.btn.secondary:active {
+  transform: scale(0.97);
+}
+
+
+.dropdown {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  border: 2px solid #94a3b8;
+  font-size: 1rem;
+  background-color: #f8fafc;
+  transition: all 0.3s ease;
+}
+
+.dropdown:focus {
+  border-color: #0ea5e9;
+  box-shadow: 0 0 6px rgba(14, 165, 233, 0.5);
+  outline: none;
+}
+
+
+@media (max-width: 600px) {
+  .ui-container h1 {
+    font-size: 1.4rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,109 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #f8f9fc, #e9efff);
+  color: #222;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  text-align: center;
+  margin: 2rem 0 1rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #1d3b78;
+}
+
+header p {
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  width: 90%;
+  max-width: 1200px;
+  padding: 1.5rem;
+}
+
+
+.image-card {
+  position: relative;
+  width: calc(33.333% - 1rem);
+  min-width: 280px;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.image-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px 12px 0 0;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+
+.image-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 12px;
+}
+
+.image-card:hover img {
+  transform: scale(1.08);
+  filter: brightness(0.85);
+}
+
+.image-card:hover::after {
+  opacity: 1;
+}
+
+
+figcaption {
+  padding: 0.8rem;
+  font-weight: 500;
+  background: #fff;
+  color: #333;
+  border-top: 1px solid #eee;
+}
+
+
+@media (max-width: 1000px) {
+  .image-card {
+    width: calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 700px) {
+  .image-card {
+    width: 100%;
+  }
+
+  header h1 {
+    font-size: 1.7rem;
+  }
+}
