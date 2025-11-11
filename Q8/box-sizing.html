@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box-Sizing Comparison</title>
+  <link rel="stylesheet" href="box-sizing.css">
+</head>
+<body>
+  <header>
+    <h1>Box-Sizing Comparison</h1>
+  </header>
+
+  <main>
+    <section class="container">
+      <div class="box default-box">
+        <h2>Default (content-box)</h2>
+        <p>This box uses the default <code>box-sizing: content-box;</code>.  
+        The total width includes padding and border added to the set width.</p>
+      </div>
+
+      <div class="box border-box">
+        <h2>Border-Box</h2>
+        <p>This box uses <code>box-sizing: border-box;</code>.  
+        Padding and border are included within the set width, keeping total size consistent.</p>
+      </div>
+    </section>
+
+    <section class="info">
+      <p><strong>Note:</strong> With <code>content-box</code>, width refers only to the content area.  
+      With <code>border-box</code>, width includes padding and border, making layouts easier to manage.</p>
+    </section>
+  </main>
+</body>
+</html>

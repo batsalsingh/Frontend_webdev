@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f2f7f9;
+  color: #1f2937;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  color: #0e7490;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  color: #374151;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.btn {
+  font-size: 1rem;
+  padding: 0.75rem 1.8rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Primary Button */
+.btn.primary {
+  background: #0ea5e9;
+  color: white;
+}
+.btn.primary:hover {
+  background: #0284c7;
+}
+.btn.primary:active {
+  transform: scale(0.97);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+.btn.primary:focus {
+  outline: 3px solid #bae6fd;
+}
+
+/* Secondary Button */
+.btn.secondary {
+  background: #22c55e;
+  color: white;
+}
+.btn.secondary:hover {
+  background: #16a34a;
+}
+.btn.secondary:active {
+  transform: scale(0.97);
+}
+.btn.secondary:focus {
+  outline: 3px solid #bbf7d0;
+}
+
+/* Outline Button */
+.btn.outline {
+  background: transparent;
+  border: 2px solid #64748b;
+  color: #334155;
+}
+.btn.outline:hover {
+  background: #e2e8f0;
+}
+.btn.outline:active {
+  transform: scale(0.97);
+}
+.btn.outline:focus {
+  outline: 3px solid #cbd5e1;
+}
+
+/* Disabled Button */
+.btn.disabled {
+  background: #cbd5e1;
+  color: #64748b;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Responsive Design */
+@media (max-width: 700px) {
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 80%;
+    max-width: 300px;
+  }
+}

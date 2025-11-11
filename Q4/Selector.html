@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Selectors Practice Page</title>
+  <link rel="stylesheet" href="Selector.css">
+</head>
+<body>
+  <header>
+    <h1>CSS Selectors Demonstration</h1>
+    <p>Explore different types of CSS selectors and how they style HTML elements.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Element Selector</h2>
+      <p>This paragraph is styled using an <strong>element selector</strong> (p).</p>
+      <p>All &lt;p&gt; elements share the same style.</p>
+    </section>
+
+    <section>
+      <h2>Class Selector</h2>
+      <p class="highlight">This paragraph uses a <strong>class selector</strong> (.highlight).</p>
+      <p class="highlight">Another paragraph sharing the same class style.</p>
+    </section>
+
+    <section>
+      <h2>ID Selector</h2>
+      <p id="unique">This paragraph is styled using an <strong>ID selector</strong> (#unique).</p>
+    </section>
+
+    <section>
+      <h2>Attribute Selector</h2>
+      <a href="https://example.com" target="_blank">External Link (opens in new tab)</a><br>
+      <a href="page.html">Internal Link</a>
+      <p>Links with specific attributes are styled differently.</p>
+    </section>
+
+    <section>
+      <h2>Combinator Selectors</h2>
+      <div class="parent">
+        <p>Child paragraph inside parent div (affected by descendant selector).</p>
+        <p>Another paragraph inside the same parent.</p>
+        <div class="child">
+          <p>Direct child paragraph (affected by child selector >).</p>
+        </div>
+      </div>
+
+      <div class="siblings">
+        <h3>Heading inside siblings container</h3>
+        <p>Paragraph immediately after heading (affected by adjacent sibling +).</p>
+        <p>Another paragraph after (affected by general sibling ~).</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

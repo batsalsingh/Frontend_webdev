@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #e6f0ef;
+  color: #1f2937;
+  line-height: 1.6;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header, main {
+  width: 100%;
+  max-width: 1000px;
+  padding: 1.5rem;
+}
+
+header {
+  text-align: center;
+  background: #d1f0e1;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+header h1 {
+  color: #0f766e;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  color: #374151;
+}
+
+section {
+  background: #ffffff;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #0d9488;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+
+p {
+  color: #374151;
+  margin-bottom: 0.5rem;
+}
+
+.highlight {
+  background-color: #fef9c3;
+  padding: 0.5rem;
+  border-left: 4px solid #eab308;
+  border-radius: 5px;
+}
+
+#unique {
+  background-color: #bae6fd;
+  padding: 0.5rem;
+  border-left: 4px solid #0284c7;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+a[target="_blank"] {
+  color: #0369a1;
+  text-decoration: underline;
+}
+
+a[href^="http"] {
+  font-weight: bold;
+}
+
+a[href$=".html"] {
+  color: #15803d;
+}
+
+.parent p {
+  color: #334155;
+}
+
+.parent > .child > p {
+  color: #dc2626;
+  font-weight: 500;
+}
+
+.siblings h3 + p {
+  background-color: #fee2e2;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.siblings h3 ~ p {
+  color: #6b7280;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  header, section {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  header p {
+    font-size: 0.9rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+}
