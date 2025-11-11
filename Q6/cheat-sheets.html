@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive CSS Cheat Sheet</title>
+    <link rel="stylesheet" href="cheat-sheets.css">
+</head>
+<body>
+    <header>
+        <h1>Responsive CSS Cheat Sheet</h1>
+        <p>Quick reference guide for modern responsive web design</p>
+    </header>
+    
+    <main>
+        <section class="cheatsheet-grid">
+            <article class="cheat-card">
+                <h2>Media Queries</h2>
+                <p>Conditionally apply CSS styles based on device characteristics like screen width, height, or orientation.</p>
+                <div class="example">
+                    <code>@media (max-width: 768px) {<br>&nbsp;&nbsp;.container { width: 100%; }<br>}</code>
+                </div>
+            </article>
+            
+            <article class="cheat-card">
+                <h2>Flexbox Layout</h2>
+                <p>One-dimensional layout system for arranging items in rows or columns with flexible spacing and alignment.</p>
+                <div class="example">
+                    <code>display: flex;<br>justify-content: center;<br>align-items: center;</code>
+                </div>
+            </article>
+            
+            <article class="cheat-card">
+                <h2>CSS Grid</h2>
+                <p>Two-dimensional layout system for creating complex responsive grid structures with rows and columns.</p>
+                <div class="example">
+                    <code>display: grid;<br>grid-template-columns: repeat(3, 1fr);<br>gap: 1rem;</code>
+                </div>
+            </article>
+            
+            <article class="cheat-card">
+                <h2>Responsive Typography</h2>
+                <p>Scale text fluidly across devices using relative units and the clamp() function for optimal readability.</p>
+                <div class="example">
+                    <code>font-size: clamp(1rem, 2vw, 1.5rem);<br>line-height: 1.6;</code>
+                </div>
+            </article>
+            
+            <article class="cheat-card">
+                <h2>CSS Filters</h2>
+                <p>Apply visual effects like blur, brightness, contrast, and saturation to elements for enhanced aesthetics.</p>
+                <div class="example">
+                    <code>filter: brightness(1.2) contrast(1.1);<br>backdrop-filter: blur(10px);</code>
+                </div>
+            </article>
+            
+            <article class="cheat-card">
+                <h2>Viewport Units</h2>
+                <p>Responsive units based on viewport dimensions: vw (width), vh (height), vmin, and vmax for fluid sizing.</p>
+                <div class="example">
+                    <code>width: 100vw;<br>height: 100vh;<br>font-size: 5vw;</code>
+                </div>
+            </article>
+            
+            <article class="cheat-card">
+                <h2>Container Queries</h2>
+                <p>Apply styles based on parent container size rather than viewport, enabling truly modular components.</p>
+                <div class="example">
+                    <code>@container (min-width: 400px) {<br>&nbsp;&nbsp;.card { flex-direction: row; }<br>}</code>
+                </div>
+            </article>
+            
+            <article class="cheat-card">
+                <h2>CSS Variables</h2>
+                <p>Define reusable custom properties for consistent theming and easier maintenance across stylesheets.</p>
+                <div class="example">
+                    <code>:root { --primary: #6c5ce7; }<br>.btn { color: var(--primary); }</code>
+                </div>
+            </article>
+            
+            <article class="cheat-card">
+                <h2>Responsive Images</h2>
+                <p>Optimize images for different screens using srcset, picture element, and object-fit properties.</p>
+                <div class="example">
+                    <code>img { max-width: 100%; height: auto; }<br>object-fit: cover;</code>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

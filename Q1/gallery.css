@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f2f4f7;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+header {
+  margin-top: 2rem;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  width: 90%;
+  max-width: 1000px;
+  padding: 1rem;
+}
+
+figure {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+figure:hover {
+  transform: translateY(-5px);
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: filter 0.5s ease;
+}
+
+figcaption {
+  padding: 0.8rem;
+  background: #fafafa;
+  font-weight: 500;
+}
+
+.filter-blur img {
+  filter: blur(3px);
+}
+.filter-grayscale img {
+  filter: grayscale(100%);
+}
+.filter-sepia img {
+  filter: sepia(100%);
+}
+.filter-brightness img {
+  filter: brightness(60%);
+}
+.filter-contrast img {
+  filter: contrast(200%);
+}
+.filter-hue img {
+  filter: hue-rotate(120deg);
+}
+
+figure:hover img {
+  filter: none;
+}
+
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}

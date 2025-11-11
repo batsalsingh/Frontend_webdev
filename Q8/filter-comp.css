@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(145deg, #0f172a, #1e3a8a);
+  color: #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+/* Header */
+.header {
+  margin-bottom: 2rem;
+  animation: fadeIn 1.2s ease;
+}
+
+.header h1 {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  color: #93c5fd;
+  letter-spacing: 0.5px;
+}
+
+.header p {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: #bfdbfe;
+  margin-top: 0.5rem;
+}
+
+/* Comparison Layout */
+.comparison-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1100px;
+  width: 100%;
+  animation: fadeInUp 1.2s ease;
+}
+
+.image-box {
+  flex: 1 1 45%;
+  background: #1e293b;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.image-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: filter 0.6s ease, transform 0.6s ease;
+}
+
+/* Filter effect for AFTER image */
+.after img {
+  filter: brightness(65%) contrast(130%) saturate(120%) hue-rotate(10deg);
+}
+
+/* Hover Effects */
+.image-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgba(147, 197, 253, 0.3);
+}
+
+.after:hover img {
+  filter: none;
+  transform: scale(1.03);
+}
+
+.before:hover img {
+  transform: scale(1.03);
+}
+
+.image-box h2 {
+  background: linear-gradient(to right, #3b82f6, #1d4ed8);
+  color: #fff;
+  padding: 0.9rem 0;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .comparison-container {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .comparison-container {
+    flex-direction: column;
+  }
+
+  .image-box {
+    flex: 1 1 100%;
+  }
+
+  .image-box h2 {
+    font-size: 1rem;
+  }
+
+  .header {
+    margin-bottom: 1.5rem;
+  }
+}

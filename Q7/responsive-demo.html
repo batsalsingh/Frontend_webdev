@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design Demo</title>
+    <link rel="stylesheet" href="responsive-demo.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>AKHI</h1>
+        </div>
+        <nav>
+            <a href="#gallery">Gallery</a>
+            <a href="#about">About</a>
+            <a href="#cheatsheet">Cheat Sheet</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="gallery" class="gallery-section">
+            <h2>Image Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="image-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <span>Responsive Design</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-placeholder" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <span>Mobile First</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-placeholder" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <span>Flexbox Layout</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-placeholder" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                        <span>CSS Grid</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-placeholder" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                        <span>Media Queries</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-placeholder" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+                        <span>Fluid Typography</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="about" class="text-section">
+            <h2>Understanding Responsive Design</h2>
+            <p>Responsive web design is an approach that ensures web pages render well on a variety of devices and window sizes. It combines flexible grids, flexible images, and media queries to create layouts that adapt seamlessly to different screen sizes.</p>
+            <p>The core principles include using relative units like percentages and viewport units, implementing flexible grid systems with CSS Grid and Flexbox, and applying media queries to adjust layouts at specific breakpoints. This creates a fluid experience that works beautifully from mobile phones to large desktop displays.</p>
+            <p>Modern responsive design also embraces progressive enhancement, starting with a solid mobile foundation and enhancing the experience for larger screens. This mobile-first approach ensures optimal performance and usability across all devices.</p>
+        </section>
+        
+        <section id="cheatsheet" class="cheatsheet-section">
+            <h2>Quick Reference Guide</h2>
+            <div class="cheat-grid">
+                <div class="cheat-item">
+                    <h3>Media Queries</h3>
+                    <p>Apply styles based on device characteristics</p>
+                    <code>@media (max-width: 768px) { }</code>
+                </div>
+                <div class="cheat-item">
+                    <h3>Flexbox</h3>
+                    <p>One-dimensional flexible layouts</p>
+                    <code>display: flex; gap: 1rem;</code>
+                </div>
+                <div class="cheat-item">
+                    <h3>CSS Grid</h3>
+                    <p>Two-dimensional grid systems</p>
+                    <code>display: grid; grid-template-columns: repeat(3, 1fr);</code>
+                </div>
+                <div class="cheat-item">
+                    <h3>Clamp Function</h3>
+                    <p>Fluid typography scaling</p>
+                    <code>font-size: clamp(1rem, 2vw, 1.5rem);</code>
+                </div>
+                <div class="cheat-item">
+                    <h3>Viewport Units</h3>
+                    <p>Responsive sizing with vw and vh</p>
+                    <code>width: 100vw; height: 100vh;</code>
+                </div>
+                <div class="cheat-item">
+                    <h3>Transitions</h3>
+                    <p>Smooth property animations</p>
+                    <code>transition: all 0.3s ease;</code>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
