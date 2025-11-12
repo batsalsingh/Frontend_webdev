@@ -1,0 +1,25 @@
+(function(){
+  let rating = 4;
+  let experience = 6;
+  let baseSalary = 120000;
+
+  let bonusRate = 0;
+  if (rating === 5) bonusRate = 20;
+  else if (rating === 4) bonusRate = 15;
+  else if (rating === 3) bonusRate = 10;
+
+  if (experience > 5) bonusRate += 5;
+
+  let bonus = (baseSalary * bonusRate) / 100;
+  let cappedBonus = bonus;
+
+  if (baseSalary > 100000 && cappedBonus > 25000) {
+    cappedBonus = 25000;
+  }
+
+  let totalSalary = baseSalary + cappedBonus;
+
+  console.log("Calculated Bonus: ₹" + bonus.toFixed(2));
+  console.log("Final Bonus (Capped if applied): ₹" + cappedBonus.toFixed(2));
+  console.log("Total Salary After Bonus: ₹" + totalSalary.toFixed(2));
+})();
