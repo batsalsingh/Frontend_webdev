@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library Management</title>
+
+    <style>
+        body { font-family: Arial; }
+        .msg { font-size: 15px; margin-top: 10px; }
+        .success { color: green; }
+        .error { color: red; }
+        #booksList p { margin: 6px 0; }
+        hr { margin: 20px 0; }
+    </style>
+</head>
+<body>
+
+    <h2>Library Management System</h2>
+
+    <h3>Available Books</h3>
+    <div id="booksList"></div>
+
+    <hr>
+
+    <h3>Issue a Book</h3>
+    <label>Enter ISBN:</label>
+    <input type="text" id="isbnIssue">
+    <button id="issueBtn">Issue</button>
+
+    <hr>
+
+    <h3>Return a Book</h3>
+    <label>Enter ISBN:</label>
+    <input type="text" id="isbnReturn">
+    <button id="returnBtn">Return</button>
+
+    <p id="msg" class="msg"></p>
+
+    <script src="library.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume Builder</title>
+
+    <style>
+        label { display:block; margin-top:10px; }
+        input, textarea { padding:6px; width:250px; }
+        .error { color:red; font-size:14px; }
+        .success { color:green; font-size:14px; }
+        .invalid { border: 2px solid red; }
+        .valid { border: 2px solid green; }
+        #output { margin-top:20px; white-space:pre; font-size:15px; }
+    </style>
+</head>
+<body>
+
+    <h2>Resume Builder</h2>
+
+    <label>Name:</label>
+    <input type="text" id="name">
+    <small id="nameErr" class="error"></small>
+
+    <label>Email:</label>
+    <input type="text" id="email">
+    <small id="emailErr" class="error"></small>
+
+    <label>Skills (comma separated):</label>
+    <input type="text" id="skills">
+    <small id="skillsErr" class="error"></small>
+
+    <label>GitHub Link:</label>
+    <input type="text" id="github">
+    <small id="gitErr" class="error"></small>
+
+    <label>LinkedIn Link:</label>
+    <input type="text" id="linkedin">
+    <small id="linkErr" class="error"></small>
+
+    <br><br>
+    <button id="buildBtn">Create Resume</button>
+
+    <h3>Generated Resume JSON</h3>
+    <pre id="output"></pre>
+
+    <script src="resume.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Student Form Validator</title>
+
+    <style>
+        .error { color: red; font-size: 14px; }
+        .success { color: green; font-size: 14px; }
+        input { padding: 5px; margin-bottom: 8px; width: 220px; }
+        .invalid { border: 2px solid red; }
+        .valid { border: 2px solid green; }
+    </style>
+</head>
+<body>
+
+    <h2>Student Registration Form</h2>
+
+    <label>Name:</label><br>
+    <input type="text" id="name"><br>
+    <small id="nameError" class="error"></small><br>
+
+    <label>Email:</label><br>
+    <input type="text" id="email"><br>
+    <small id="emailError" class="error"></small><br>
+
+    <label>Phone:</label><br>
+    <input type="text" id="phone"><br>
+    <small id="phoneError" class="error"></small><br>
+
+    <label>Password:</label><br>
+    <input type="password" id="password"><br>
+    <small id="passError" class="error"></small><br>
+
+    <button id="submitBtn">Validate</button>
+
+    <p id="finalMsg"></p>
+
+    <script src="student.js"></script>
+</body>
+</html>
