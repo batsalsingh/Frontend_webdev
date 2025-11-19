@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Table Filter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Real-Time Student Table Filter</h2>
+
+    <input type="text" id="searchBox" placeholder="Search name, branch, CGPA">
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Branch</th>
+          <th>CGPA</th>
+        </tr>
+      </thead>
+
+      <tbody id="tableBody">
+        <tr><td>Akhi</td><td>CSE</td><td>8.9</td></tr>
+        <tr><td>Shubham</td><td>ECE</td><td>8.1</td></tr>
+        <tr><td>Shubh</td><td>IT</td><td>9.0</td></tr>
+        <tr><td>Kartik</td><td>ME</td><td>7.8</td></tr>
+        <tr><td>Padda</td><td>CSE</td><td>8.4</td></tr>
+        <tr><td>Batsal</td><td>EE</td><td>9.2</td></tr>
+      </tbody>
+    </table>
+
+    <p id="noResults">No results found</p>
+  </div>
+
+  <script src="Table-Filter.js"></script>
+</body>
+</html>

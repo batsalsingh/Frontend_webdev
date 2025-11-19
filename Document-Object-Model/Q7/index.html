@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mouse Path & Coordinates Logger</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2 class="title">Mouse Path & Coordinates Logger</h2>
+
+  <div id="loggerBox" class="logger-box">
+    <div id="coords" class="coords">
+      clientX: <span id="cx">-</span> px — 
+      clientY: <span id="cy">-</span> px
+    </div>
+
+    <!-- Layer for dots -->
+    <div id="dotsLayer"></div>
+  </div>
+
+  <p class="hint">Move mouse inside the box to see live X/Y.</p>
+
+  <button id="clearDots">Clear Dots</button>
+
+  <script src="Co-ordinates_locater.js"></script>
+</body>
+</html>

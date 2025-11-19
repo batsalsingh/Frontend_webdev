@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, sans-serif;
+  transition: 0.3s;
+}
+
+/* Center layout */
+.container {
+  margin: 100px auto;
+  width: 300px;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 8px;
+  cursor: pointer;
+}
+
+/* THEME STYLES */
+body[data-theme="light"] {
+  background: #ffffff;
+  color: #000000;
+}
+
+body[data-theme="dark"] {
+  background: #1a1a1a;
+  color: #ffffff;
+}
+
+body[data-theme="blue"] {
+  background: #0d6efd;
+  color: #ffffff;
+}

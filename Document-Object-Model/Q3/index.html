@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Multi-Step Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Multi-Step Form</h2>
+
+    <!-- STEP 1 -->
+    <div class="step" id="step1">
+      <label>Name:</label>
+      <input type="text" id="nameInput">
+      <p class="error" id="nameError"></p>
+      <button id="next1">Next</button>
+    </div>
+
+    <!-- STEP 2 -->
+    <div class="step" id="step2">
+      <label>Email:</label>
+      <input type="text" id="emailInput">
+      <p class="error" id="emailError"></p>
+
+      <button id="back2">Back</button>
+      <button id="next2">Next</button>
+    </div>
+
+    <!-- STEP 3 -->
+    <div class="step" id="step3">
+      <label>Password:</label>
+      <input type="password" id="passwordInput">
+      <p class="error" id="passwordError"></p>
+
+      <button id="back3">Back</button>
+      <button id="finishBtn">Finish</button>
+    </div>
+
+    <!-- SUMMARY -->
+    <div class="step" id="summaryStep">
+      <h3>Summary</h3>
+      <p><strong>Name:</strong> <span id="sumName"></span></p>
+      <p><strong>Email:</strong> <span id="sumEmail"></span></p>
+      <p><strong>Password:</strong> <span id="sumPassword"></span></p>
+
+      <button id="restartBtn">Restart</button>
+    </div>
+
+  </div>
+
+  <script src="Multi-step_form.js"></script>
+</body>
+</html>
