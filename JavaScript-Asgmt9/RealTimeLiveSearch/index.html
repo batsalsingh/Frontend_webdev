@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Search Demo</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+      }
+
+      .container {
+        width: 400px;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+        text-align: center;
+        color: #333;
+      }
+
+      input[type="text"] {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        box-sizing: border-box;
+        outline: none;
+      }
+
+      input[type="text"]:focus {
+        border-color: #007bff;
+      }
+
+      #loader {
+        text-align: center;
+        color: #888;
+        margin-top: 10px;
+        font-size: 14px;
+      }
+
+      #results {
+        margin-top: 15px;
+      }
+
+      .product-card {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #eee;
+        padding: 10px 0;
+      }
+
+      .product-card:last-child {
+        border-bottom: none;
+      }
+
+      .product-card img {
+        width: 50px;
+        height: 50px;
+        border-radius: 5px;
+        object-fit: cover;
+        margin-right: 15px;
+      }
+
+      .product-info h4 {
+        margin: 0 0 5px;
+        font-size: 16px;
+        color: #333;
+      }
+
+      .product-info .price {
+        color: #28a745;
+        font-weight: bold;
+        margin: 0;
+      }
+
+      .no-results {
+        text-align: center;
+        color: #dc3545;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Product Search</h2>
+      <input type="text" id="search-box" placeholder="Type to search..." />
+
+      <div id="loader" style="display: none">Searching...</div>
+
+      <div id="results"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
