@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Multi-jQuery Widgets</title>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script>
+    var jq1 = jQuery.noConflict(true);
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    var jq2 = jQuery.noConflict(true);
+  </script>
+
+  <style>
+    .slide {
+      display: none;
+      width: 300px;
+      padding: 20px;
+      border: 1px solid #666;
+      margin: 10px;
+    }
+
+    .active-widget {
+      background: yellow;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      top: 30%;
+      left: 40%;
+      padding: 20px;
+      background: white;
+      border: 2px solid #444;
+    }
+
+    .tooltip {
+      display: none;
+      position: absolute;
+      padding: 5px;
+      background: #000;
+      color: #fff;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Carousel (jQuery v1)</h2>
+  <div class="slide">Slide 1</div>
+  <div class="slide">Slide 2</div>
+  <div class="slide">Slide 3</div>
+
+  <button id="highlightWidget">Highlight Active Widget</button>
+
+  <h2>Notification Modal (jQuery v2)</h2>
+  <button id="openModal">Show Notification</button>
+  <div class="modal" id="modalBox">This is a notification!</div>
+
+  <h2>Tooltip Elements (jQuery v2)</h2>
+  <p class="tip" data-text="Tooltip for Item A">Hover on Item A</p>
+  <p class="tip" data-text="Tooltip for Item B">Hover on Item B</p>
+  <div class="tooltip" id="tooltipBox"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

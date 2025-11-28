@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Team Members Directory</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <style>
+    .department {
+      border: 2px solid #333;
+      padding: 10px;
+      width: 350px;
+      margin-bottom: 20px;
+    }
+
+    .manager {
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+      padding: 5px;
+    }
+
+    .employee {
+      margin-left: 20px;
+      padding: 5px;
+      cursor: pointer;
+    }
+
+    .highlight {
+      background: lightyellow;
+    }
+
+    .contact {
+      display: none;
+      margin-left: 40px;
+      font-size: 14px;
+      color: #444;
+    }
+
+    .dept-highlight {
+      background: #e0f7fa;
+    }
+  </style>
+</head>
+<body>
+
+  <button id="randomBtn">Highlight Random Employee's Siblings</button>
+  <button id="toggleTeams">Collapse/Expand All Teams</button>
+
+  <div class="department" data-dept="sales">
+    <h3 class="deptTitle">Sales Department</h3>
+    <div class="manager">Manager: Shubham</div>
+    <div class="employee">Batsal</div>
+    <div class="contact">batsal@gmail.com</div>
+    <div class="employee">Akshat</div>
+    <div class="contact">akhi@gmail.com</div>
+  </div>
+
+  <div class="department" data-dept="tech">
+    <h3 class="deptTitle">Tech Department</h3>
+    <div class="manager">Manager: Anurag</div>
+    <div class="employee">Nitin</div>
+    <div class="contact">nitin@gmail.com</div>
+    <div class="employee">Sarthak</div>
+    <div class="contact">sarthak@gmail.com</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

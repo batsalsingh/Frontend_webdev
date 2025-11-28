@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form Validation</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <style>
+    .inputBox {
+      margin: 10px 0;
+    }
+
+    #success {
+      margin-top: 15px;
+      color: green;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>User Registration</h2>
+
+  <div class="inputBox">
+    <input type="text" id="name" placeholder="Enter Name">
+  </div>
+
+  <div class="inputBox">
+    <input type="text" id="email" placeholder="Enter Email">
+  </div>
+
+  <div class="inputBox">
+    <input type="password" id="password" placeholder="Enter Password">
+  </div>
+
+  <button id="registerBtn">Register</button>
+
+  <div id="success"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
